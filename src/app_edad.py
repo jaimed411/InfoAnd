@@ -3,9 +3,9 @@ import pandas as pd
 from sklearn.linear_model import LinearRegression
 import joblib
 
+
 # Cargar el modelo entrenado
-modelo_ruta = '/workspaces/InfoAnd/data/modelo_edad.joblib'
-model = joblib.load(modelo_ruta)
+model = joblib.load("../data/modelo_edad.joblib")
 
 # Cargar los conjuntos de entrenamiento y prueba
 X_train_ruta = '/workspaces/InfoAnd/EDAD/X_train.csv'
