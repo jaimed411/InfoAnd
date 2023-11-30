@@ -8,8 +8,8 @@ import joblib
 model = joblib.load("../data/modelo_edad.joblib")
 
 # Cargar los conjuntos de entrenamiento y prueba
-X_train_ruta = '/workspaces/InfoAnd/EDAD/X_train.csv'
-y_test_ruta = '/workspaces/InfoAnd/EDAD/y_test.csv'
+X_train_ruta = '../EDAD/X_train.csv'
+y_test_ruta = '../EDAD/y_test.csv'
 X_train = pd.read_csv(X_train_ruta)
 y_test = pd.read_csv(y_test_ruta)
 
