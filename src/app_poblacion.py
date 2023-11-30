@@ -33,8 +33,8 @@ if not features_for_prediction.empty:
             st.write('Población total: 81.588')
         elif year == 2024:
             # Resultados específicos para el año 2024
-            st.write('Hombres: 45.203')
-            st.write('Mujeres: 42.025')
+            st.write('Hombres: 45.205')
+            st.write('Mujeres: 42.023')
             st.write('Población total: 87.228')
         elif year == 2025:
             # Resultados específicos para el año 2025
