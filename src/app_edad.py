@@ -25,7 +25,7 @@ features_for_prediction = X_train[['0-14 años %', '15-64 años %', '> 64 años 
 # Verificar si hay datos disponibles
 if not features_for_prediction.empty:
     # Botón para realizar la predicción
-    if st.button('Predecir Población'):
+    if st.button('Predecir Edad'):
         if year == 2023:
             # Resultados específicos para el año 2023
             st.write('De 0 a 14 años: 11.85%')
