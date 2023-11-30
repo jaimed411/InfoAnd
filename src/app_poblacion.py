@@ -4,12 +4,12 @@ from sklearn.linear_model import LinearRegression
 import joblib
 
 # Cargar el modelo entrenado
-modelo_ruta = 'C:/Users/Jaime/Desktop/EUROPEAN MARKET COLLEGE/clase1-minado/POBLACION/modelo_poblacion.joblib'
+modelo_ruta = '/workspaces/InfoAnd/POBLACION/modelo_poblacion.joblib'
 model = joblib.load(modelo_ruta)
 
 # Cargar los conjuntos de entrenamiento y prueba
-X_train_ruta = 'C:/Users/Jaime/Desktop/EUROPEAN MARKET COLLEGE/clase1-minado/POBLACION/X_train.csv'
-y_test_ruta = 'C:/Users/Jaime/Desktop/EUROPEAN MARKET COLLEGE/clase1-minado/POBLACION/y_test.csv'
+X_train_ruta = '/workspaces/InfoAnd/POBLACION/X_train.csv'
+y_test_ruta = '/workspaces/InfoAnd/POBLACION/y_test.csv'
 X_train = pd.read_csv(X_train_ruta)
 y_test = pd.read_csv(y_test_ruta)
 
@@ -33,14 +33,14 @@ if not features_for_prediction.empty:
             st.write('Población total: 81.588')
         elif year == 2024:
             # Resultados específicos para el año 2024
-            st.write('Hombres: 45.200')
-            st.write('Mujeres: 42.000')
-            st.write('Población total: 87.200')
+            st.write('Hombres: 45.203')
+            st.write('Mujeres: 42.025')
+            st.write('Población total: 87.228')
         elif year == 2025:
             # Resultados específicos para el año 2025
-            st.write('Hombres: 46.000')
-            st.write('Mujeres: 43.000')
-            st.write('Población total: 89.000')
+            st.write('Hombres: 46.120')
+            st.write('Mujeres: 43.040')
+            st.write('Población total: 89.160')
         else:
             # Predecir las edades para el año seleccionado
             prediction = model.predict(features_for_prediction)

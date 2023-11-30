@@ -14,7 +14,7 @@ X_train = pd.read_csv(X_train_ruta)
 y_test = pd.read_csv(y_test_ruta)
 
 # Configurar la aplicación Streamlit
-st.title('Predicción de Población')
+st.title('Predicción de Edad')
 
 # Slider para seleccionar el año en el centro de la página
 year = st.slider(' ', min_value=2023, max_value=2025, step=1)
