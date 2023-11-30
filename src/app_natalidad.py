@@ -4,12 +4,12 @@ from sklearn.linear_model import LinearRegression
 import joblib
 
 # Cargar el modelo entrenado
-modelo_ruta = '/workspaces/InfoAnd/NATALIDAD/modelo_natalidad.joblib'
+modelo_ruta = '../data/modelo_natalidad.joblib'
 model = joblib.load(modelo_ruta)
 
 # Cargar los conjuntos de entrenamiento y prueba
-X_train_ruta = '/workspaces/InfoAnd/NATALIDAD/X_train.csv'
-y_test_ruta = '/workspaces/InfoAnd/NATALIDAD/y_test.csv'
+X_train_ruta = '../NATALIDAD/X_train.csv'
+y_test_ruta = '../NATALIDAD/y_test.csv'
 X_train = pd.read_csv(X_train_ruta)
 y_test = pd.read_csv(y_test_ruta)
 
